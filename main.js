@@ -26,6 +26,9 @@ $btnDown.addEventListener('click', function() {
 for(let i = 0; i < $boxes.length; i++) {
     $boxes[i].addEventListener('click', function(e) {
         let el = e.target;
+        if(!el.classList.contains('btn-quantity')) {
+            return null;
+        }
         let $quantity = el.parentElement.previousElementSibling;
         const $btnPlus = this.querySelector('.btn-plus');
         const $btnMinus = this.querySelector('.btn-minus');
