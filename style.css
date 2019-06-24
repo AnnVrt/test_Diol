@@ -1,9 +1,9 @@
 body {
     margin: 0px;
 }
-.underline {
+/* .underline {
     text-decoration: none;
-}
+} */
 ul {
     padding: 0px;
     margin: 0px;
@@ -28,7 +28,9 @@ a:hover {
     display: flex;
     justify-content: space-between;
 }
-
+.current-page {
+    text-decoration: none;
+} 
 @media all and (max-width: 990px) {
     .wrapper {
         width: 800px;
@@ -221,7 +223,10 @@ a:hover {
     flex-wrap: wrap;
 }
 .baloon-box {
-    max-width: 192px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 192px;
     border: 1px solid #d0dbe6;
     border-radius: 7px;
     text-align: center;
@@ -266,6 +271,9 @@ a:hover {
     padding-left: 5px;
     box-sizing: border-box;
 }
+.input-quantity:focus {
+    outline: none;
+}
 .quantity-box-btns {
     display: flex;
     flex-direction: column;
@@ -291,7 +299,7 @@ a:hover {
 .main-nav-item:not(:last-child) {
     margin-right: 8px;
 }
-.bold {
+.current-page-bold {
     font-weight: 900;
 }
 

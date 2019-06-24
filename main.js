@@ -6,7 +6,7 @@ const $btnUp = $body.querySelector('.btn-up');
 const $btnDown = $body.querySelector('.btn-down');
 
 
-if(document.location.href === 'file:///C:/Users/User/Desktop/vorotyntseva_test/index.html') {
+if(document.location.href === 'file:///C:/Users/User/Desktop/vorotyntseva_test/test_Diol/index.html') {
     const $page = $body.querySelector('.index');
     const $pageNav = $body.querySelector('.main-nav-item .index');
     
